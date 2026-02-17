@@ -394,12 +394,19 @@ section {
     font-weight: 500;
     border: 1px solid rgba(139, 92, 246, 0.3);
     transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .skill-tag:hover {
     background: var(--accent-primary);
     color: white;
     transform: scale(1.05);
+}
+
+.skill-tag-link {
+    cursor: pointer;
 }
 
 /* Contact Section */
