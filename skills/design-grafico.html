@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Gráfico | Paulo Henrique</title>
+    <title>Graphic Design | Paulo Henrique</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="skill-page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,44 +17,39 @@
         <div class="nav-container">
             <a href="../index.html" class="logo">PH<span class="dot">.</span></a>
             <ul class="nav-links">
-                <li><a href="../index.html#about">Sobre</a></li>
-                <li><a href="../index.html#experience">Experiência</a></li>
-                <li><a href="../index.html#skills">Skills</a></li>
-                <li><a href="../index.html#contact">Contato</a></li>
+                <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+                <li><a href="../index.html#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="../index.html#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <button class="lang-toggle" id="langToggle" title="Switch Language">
+                <span class="lang-flag">🇧🇷</span>
+                <span class="lang-text">PT</span>
+            </button>
         </div>
     </nav>
 
     <main class="skill-main">
         <section class="skill-header">
-            <a href="../index.html#skills" class="back-btn">← Voltar ao Portfólio</a>
+            <a href="../index.html#skills" class="back-btn" data-i18n="back">← Back to Portfolio</a>
             <div class="skill-icon">🖌️</div>
-            <h1 class="skill-title">Design Gráfico</h1>
-            <p class="skill-desc">Criação de identidades visuais, materiais e peças criativas</p>
+            <h1 class="skill-title">Graphic Design</h1>
+            <p class="skill-desc" data-i18n="design.desc">Creation of visual identities, materials and creative pieces</p>
         </section>
 
         <section class="projects-section">
-            <h2 class="projects-title">Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">🚧</div>
-                    <h3 class="project-title">Coming Soon</h3>
-                    <p class="project-desc">Estou trabalhando em projetos futuros, novidades em breve.</p>
-                    <div class="project-tags">
-                        <span class="project-tag">Em Breve</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link demo" style="pointer-events: none; opacity: 0.5;">Ver Portfólio →</a>
-                    </div>
-                </div>
+            <div class="coming-soon-card">
+                <div class="coming-soon-icon">🚧</div>
+                <h2 class="coming-soon-title" data-i18n="coming.title">Coming Soon</h2>
+                <p class="coming-soon-desc" data-i18n="coming.desc">I'm working on future projects, news coming soon.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Feito com 💜 por Paulo Henrique © 2026</p>
+        <p><span data-i18n="footer.text">Made with 💜 by Paulo Henrique</span> © <span id="currentYear">2026</span></p>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="skill-i18n.js"></script>
 </body>
 </html>
