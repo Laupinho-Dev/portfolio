@@ -384,6 +384,13 @@ section {
     font-size: 0.9rem;
 }
 
+/* Education Section */
+.education {
+    padding: 100px 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /* Skills Grid */
 .skills-grid {
     display: grid;
