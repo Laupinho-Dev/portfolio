@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulo Henrique | Desenvolvedor & Designer</title>
+    <title>Paulo Henrique | Developer & Designer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,15 @@
         <div class="nav-container">
             <a href="#" class="logo">PH<span class="dot">.</span></a>
             <ul class="nav-links">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#experience">Experiência</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <button class="lang-toggle" id="langToggle" title="Switch Language">
+                <span class="lang-flag">🇧🇷</span>
+                <span class="lang-text">PT</span>
+            </button>
         </div>
     </nav>
 
@@ -29,19 +33,19 @@
             <div class="hero-content">
                 <div class="greeting">
                     <span class="wave">👋</span>
-                    <span>Olá, eu sou</span>
+                    <span data-i18n="hero.greeting">Hello, I'm</span>
                 </div>
                 <h1 class="name">Paulo Henrique<br><span class="highlight">de Jesus Machado</span></h1>
-                <h2 class="title">Estudante / <span class="gradient-text">Desenvolvedor</span> / Designer</h2>
-                <p class="summary">
-                    Profissional com experiência em gestão comercial e desenvolvimento web, 
-                    unindo visão estratégica de negócios a competências técnicas. 
-                    Atuei em liderança de equipe, gestão operacional e vendas, com foco em resultados 
-                    e satisfação do cliente. Também participei do desenvolvimento de aplicações web 
-                    e mobile responsivas, priorizando experiência do utilizador, usabilidade e desempenho.
+                <h2 class="title" data-i18n="hero.title">Student / <span class="gradient-text">Developer</span> / Designer</h2>
+                <p class="summary" data-i18n="hero.summary">
+                    Professional with experience in business management and web development, 
+                    combining strategic business vision with technical skills. 
+                    I have worked in team leadership, operational management and sales, focusing on results 
+                    and customer satisfaction. I also participated in the development of responsive web 
+                    and mobile applications, prioritizing user experience, usability and performance.
                 </p>
                 <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Vamos Conversar</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta.primary">Let's Talk</a>
                     <a href="https://github.com/Laupinho-Dev" target="_blank" class="btn btn-secondary">
                         <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -60,7 +64,7 @@
                     <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
   <span class="key">name</span>: <span class="string">"Paulo Henrique"</span>,
   <span class="key">role</span>: [<span class="string">"Dev"</span>, <span class="string">"Designer"</span>],
-  <span class="key">passion</span>: <span class="string">"Criar soluções"</span>,
+  <span class="key">passion</span>: <span class="string" data-i18n="hero.code.passion">"Creating solutions"</span>,
   <span class="key">available</span>: <span class="boolean">true</span>
 };</code></pre>
                 </div>
@@ -68,40 +72,40 @@
         </section>
 
         <section class="experience" id="experience">
-            <h2 class="section-title"><span class="gradient-text">Experiência</span> Profissional</h2>
+            <h2 class="section-title"><span class="gradient-text" data-i18n="experience.title">Experience</span> <span data-i18n="experience.subtitle">Professional</span></h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Desenvolvedor Web</h3>
-                        <h4>AD Soluções Dev — Brasília, Brasil</h4>
-                        <p class="period">Desenvolvimento de aplicações web e mobile</p>
+                        <h3 data-i18n="experience.jobs.job1.title">Web Developer</h3>
+                        <h4 data-i18n="experience.jobs.job1.company">AD Soluções Dev — Brasília, Brazil</h4>
+                        <p class="period" data-i18n="experience.jobs.job1.period">Web and mobile applications development</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Gerente de Loja</h3>
-                        <h4>Bicicletaria — Brasília, Brasil</h4>
-                        <p class="period">Liderança de equipe e gestão operacional</p>
+                        <h3 data-i18n="experience.jobs.job2.title">Store Manager</h3>
+                        <h4 data-i18n="experience.jobs.job2.company">Bicicletaria — Brasília, Brazil</h4>
+                        <p class="period" data-i18n="experience.jobs.job2.period">Team leadership and operational management</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Agente de Vendas</h3>
-                        <h4>Bicicletaria — Brasília, Brasil</h4>
-                        <p class="period">Vendas e atendimento ao cliente</p>
+                        <h3 data-i18n="experience.jobs.job3.title">Sales Agent</h3>
+                        <h4 data-i18n="experience.jobs.job3.company">Bicicletaria — Brasília, Brazil</h4>
+                        <p class="period" data-i18n="experience.jobs.job3.period">Sales and customer service</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="skills" id="skills">
-            <h2 class="section-title"><span class="gradient-text">Skills</span> & Tecnologias</h2>
+            <h2 class="section-title"><span class="gradient-text" data-i18n="skills.title">Skills</span> <span data-i18n="skills.subtitle">& Technologies</span></h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>💻 Desenvolvimento</h3>
+                    <h3 data-i18n="skills.categories.dev">💻 Development</h3>
                     <div class="skill-tags">
                         <a href="skills/flutter.html" class="skill-tag">Flutter</a>
                         <a href="skills/react.html" class="skill-tag">React</a>
@@ -110,42 +114,42 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>🎨 Design & Criatividade</h3>
+                    <h3 data-i18n="skills.categories.design">🎨 Design & Creativity</h3>
                     <div class="skill-tags">
                         <a href="skills/ui-ux.html" class="skill-tag">UI/UX Design</a>
-                        <a href="skills/design-grafico.html" class="skill-tag">Design Gráfico</a>
+                        <a href="skills/design-grafico.html" class="skill-tag">Graphic Design</a>
                         <a href="skills/canvas.html" class="skill-tag">Canvas</a>
                         <a href="skills/picsart.html" class="skill-tag">PicsArt</a>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>🤖 IA & Engines</h3>
+                    <h3 data-i18n="skills.categories.ai">🤖 AI & Engines</h3>
                     <div class="skill-tags">
-                        <a href="skills/engenharia-de-prompt.html" class="skill-tag">Engenharia de Prompt</a>
+                        <a href="skills/engenharia-de-prompt.html" class="skill-tag">Prompt Engineering</a>
                         <a href="skills/comfyui.html" class="skill-tag">ComfyUI</a>
                         <a href="skills/unreal-engine.html" class="skill-tag">Unreal Engine 5</a>
                         <a href="skills/unity.html" class="skill-tag">Unity</a>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>📊 Office & Soft Skills</h3>
+                    <h3 data-i18n="skills.categories.office">📊 Office & Soft Skills</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Microsoft Excel</span>
                         <span class="skill-tag">Microsoft Word</span>
-                        <span class="skill-tag">Criatividade</span>
-                        <span class="skill-tag">Resolução de Conflitos</span>
-                        <span class="skill-tag">Boa Comunicação</span>
-                        <span class="skill-tag">Trabalho em Equipe</span>
+                        <span class="skill-tag" data-i18n="skills.soft.creativity">Creativity</span>
+                        <span class="skill-tag" data-i18n="skills.soft.conflict">Conflict Resolution</span>
+                        <span class="skill-tag" data-i18n="skills.soft.communication">Good Communication</span>
+                        <span class="skill-tag" data-i18n="skills.soft.teamwork">Teamwork</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="contact" id="contact">
-            <h2 class="section-title">Vamos <span class="gradient-text">Conversar?</span></h2>
-            <p class="contact-text">
-                Estou sempre aberto a novas oportunidades e parcerias. 
-                Me chama pra gente criar algo incrível juntos!
+            <h2 class="section-title" data-i18n="contact.title">Let's <span class="gradient-text">Talk?</span></h2>
+            <p class="contact-text" data-i18n="contact.text">
+                I'm always open to new opportunities and partnerships. 
+                Let's create something amazing together!
             </p>
             <div class="contact-links">
                 <a href="mailto:phziin061@gmail.com" class="contact-card">
@@ -166,7 +170,7 @@
     </main>
 
     <footer>
-        <p>Feito com 💜 por Paulo Henrique © 2026</p>
+        <p><span data-i18n="footer.text">Made with 💜 by Paulo Henrique</span> © <span id="currentYear">2026</span></p>
     </footer>
 
     <script src="script.js"></script>

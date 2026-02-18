@@ -98,6 +98,38 @@ body {
     left: 0;
     width: 0;
     height: 2px;
+}
+
+/* Language Toggle Button */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 20px;
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.lang-toggle:hover {
+    background: rgba(139, 92, 246, 0.2);
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+.lang-flag {
+    font-size: 1rem;
+}
+
+.lang-text {
+    font-weight: 700;
+}
     background: var(--gradient);
     transition: width 0.3s ease;
 }
